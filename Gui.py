@@ -1,4 +1,5 @@
 import wx
+from Ex2 import Bi_rnn
 
 class TabOne(wx.Panel):
     def __init__(self, parent):
@@ -10,32 +11,67 @@ class TabTwo(wx.Panel):
         wx.Panel.__init__(self, parent)
 
         vbox = wx.BoxSizer(wx.VERTICAL)
-        hbox1 = wx.BoxSizer(wx.HORIZONTAL)
 
         self.l1 = wx.StaticText(self, -1, "Search: ")
 
-        hbox1.Add(self.l1, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
+        #METHOD:
+        hbox1 = wx.BoxSizer(wx.HORIZONTAL)
+        self.cb1 = wx.CheckBox(self, label='BI-RNN')
+        hbox1.Add(self.cb1)
+        self.cb2 = wx.CheckBox(self, label='CNN')
+        hbox1.Add(self.cb2, flag=wx.LEFT, border=10)
+        self.cb3 = wx.CheckBox(self, label='HAN')
+        hbox1.Add(self.cb3, flag=wx.LEFT, border=10)
+
+        #INPUT DOC:
+        hbox2 = wx.BoxSizer(wx.HORIZONTAL)
+        hbox2.Add(self.l1, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
         self.t1 = wx.TextCtrl(self,
                               style=wx.TE_PROCESS_ENTER, size=wx.Size(400, 80))
 
-        hbox1.Add(self.t1, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
-        self.t1.Bind(wx.EVT_TEXT_ENTER, self.OnEnterPressed)
+        hbox2.Add(self.t1, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
 
-        hbox2 = wx.BoxSizer(wx.HORIZONTAL)
+        #Button
+        self.btn = wx.Button(self, -1, "Predict")
+        self.btn.Bind(wx.EVT_BUTTON, self.OnClicked)
+        hbox2.Add(self.btn, 10, wx.EXPAND | wx.ALIGN_RIGHT | wx.ALL, 10)
+
+        #PREDICTION:
+        hbox3 = wx.BoxSizer(wx.HORIZONTAL)
         self.l2 = wx.StaticText(self, -1, "Political Party:   ")
         self.a2 = wx.StaticText(self, -1, "", size=wx.Size(400, 20))
-        hbox2.Add(self.l2, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
-        hbox2.Add(self.a2, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
+        hbox3.Add(self.l2, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
+        hbox3.Add(self.a2, 10, wx.EXPAND | wx.ALIGN_LEFT | wx.ALL, 10)
 
         vbox.Add(hbox1)
         vbox.Add(hbox2)
+        vbox.Add(hbox3)
+
         self.SetSizer(vbox)
         self.Centre()
         self.Show()
         self.Fit()
+        self.GetParent()
 
-    def OnEnterPressed(self, event):
+        print("Loading RNN Model")
+        self.bi_rnn = Bi_rnn()
+        print("Loaded")
+
+
+    def OnClicked(self, event):
         print("Enter pressed")
+        flag = 0
+        if self.cb1.GetValue():
+            print("Making RNN Model Prediction")
+            results = self.bi_rnn.makePrediction(self.t1.GetValue())
+            self.a2.SetLabel(results)
+        elif self.cb2.GetValue():
+            print("CNN")
+        elif self.cb3.GetValue():
+            print("HAN")
+
+
+
 
 
 class TabThree(wx.Panel):
@@ -46,8 +82,8 @@ class TabThree(wx.Panel):
 class HelloFrame(wx.Frame):
     def __init__(self, parent, title):
         # ensure the parent's __init__ is called
-        super(HelloFrame, self).__init__(parent, title = title,size = (500,
-                                                                       250));
+        super(HelloFrame, self).__init__(parent, title = title,size = (700,
+                                                                       500));
         panel = wx.Panel(self)
         nb = wx.Notebook(panel)
 
@@ -66,9 +102,6 @@ class HelloFrame(wx.Frame):
         panel.SetSizer(sizer)
 
         self.CreateStatusBar()
-
-    def OnEnterPressed(self, event):
-        print("Enter pressed")
 
 if __name__ == '__main__':
     app = wx.App()
