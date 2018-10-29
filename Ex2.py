@@ -74,7 +74,6 @@ def decodeOutput(numb):
 def prepareData(embeddings):
     print("Start reading data")
     data = pd.read_csv(PATH, encoding="utf8",header=0)
-
     training = data.values
     texts = np.append(training[:,0],training[:,2])
     rowsCounter = int(np.size(texts, 0) / 2)
@@ -129,12 +128,12 @@ def createModel(voc_size,embeddings):
                           , input_length=MAX_WORDS_DOC,
                           trainable=False)(sequence_input)
 
-    conv_layer1 = Convolution1D(300, 2, activation="relu",
-                                kernel_regularizer=regularizers.l2(0.1))(
-        embedded_sequences)
-    pooling_layer1 = GlobalMaxPool1D()(conv_layer1)
-
-    preds = Dense(LABELS, activation=ACTIVATION)(pooling_layer1)
+    l_cov1 = Convolution1D(128,3, activation='relu')(embedded_sequences)
+    l_pool1 = MaxPooling1D(3)(l_cov1)
+    l_cov2 = Convolution1D(128, 3, activation='relu')(l_pool1)
+    l_pool2 = GlobalMaxPool1D()(l_cov2)
+    l_dense = Dense(128, activation='relu')(l_pool2)
+    preds = Dense(LABELS, activation=ACTIVATION)(l_dense)
     model = Model(sequence_input, preds)
 
     model.compile(optimizer=OPTIMIZER, loss=LOSS_FUNCTION, metrics=['accuracy'])
@@ -149,7 +148,8 @@ def trainModel(encoder, data, target):
     target = target.reshape(target.shape[0],1)
     print(target.shape)
 
-    encoder.fit(data, target, epochs=EPOCHS, batch_size=BATCH_SIZE, shuffle=False, validation_split=VALIDATION,
+    encoder.fit(data, target, epochs=EPOCHS, batch_size=BATCH_SIZE,
+                shuffle=True, validation_split=VALIDATION,
                 verbose=2, callbacks=EARLYSTOP)
     encoder.save_weights(MODEL_PATH)
     return encoder
