@@ -1,14 +1,13 @@
 import pandas as pd
 import os
 import sys
-from sklearn.model_selection import train_test_split
+import nltk
 import whoosh.index as index
 import whoosh.query as query
 from whoosh.fields import Schema, TEXT, STORED, BOOLEAN, NUMERIC, DATETIME,ID
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import *
-
-
+from collections import Counter
 
 PATH="en_docs.csv"
 FLAG_CREATE = False
@@ -37,34 +36,61 @@ def readData():
         for column in ("party", "title"):
             row[column] = row[column][0]
 
-    cleaned.to_csv("test.csv")
-    #print(data.columns.values)
-    #print(len(data.columns.values))
-    #print(data.head(1))
+    cleaned.to_csv("en_docs_clean_test.csv")
     return cleaned
 
 def createSchema(data):
     print("Create schema")
     schema = Schema(number=NUMERIC,
-                    text=TEXT(stored = True),
+                    text=TEXT(stored = True, vector=True),
                     party=NUMERIC(stored = True),
-                    title=TEXT(stored = True))
+                    title=TEXT(stored = True, vector=True))
 
     ix = create_in("indexdir", schema)
     writer = ix.writer()
     print("Writing in schema", end='')
     for index, row in data.iterrows():
-        if(int(index)%500==0):
+        if(int(index)%5==0):
             print(".", end='', flush=True)
 
         writer.add_document(number=row[1],
                     text=row["text"],
                     party=row["party"],
                     title=row["title"])
-    print(" done")
-    print("commiting schema")
+    print("done")
+    print("commiting schema...")
     writer.commit()
     return ix
+
+def result_statistics(results, searcher, qr):
+    query_tokens = nltk.word_tokenize(qr)
+    party_counts = dict()
+    keyword_per_party_counts = dict()
+    for docnum in results.docs():
+        # party counts
+        party = searcher.stored_fields(docnum)["party"]
+        if(party not in party_counts):
+            party_counts[party] = 0
+        party_counts[party] += 1
+
+        #keyword_per_party_counts
+        term_freq_text = Counter(dict(searcher.vector_as("frequency", docnum, "text")))
+        term_freq_title = Counter(dict(searcher.vector_as("frequency", docnum, "title")))
+        total_term_freq = term_freq_text + term_freq_title
+
+        if( party not in keyword_per_party_counts):
+            keyword_per_party_counts[party] = dict()
+            for tok in query_tokens:
+                keyword_per_party_counts[party][ tok ] = 0
+
+        for tok in query_tokens:
+            if(tok in total_term_freq):
+                keyword_per_party_counts[party][ tok ] += total_term_freq[tok]
+        
+    return party_counts, keyword_per_party_counts
+            
+
+
 def searchManifest(ix):
     qr = input("query: ")
     while(qr != '-exit'):
@@ -72,15 +98,20 @@ def searchManifest(ix):
             qp = MultifieldParser(["title", "text"], schema=ix.schema)
             #qp = QueryParser("title", schema=ix.schema)
             q = qp.parse(qr)
-            results = searcher.search(q)
+            results = searcher.search(q, terms = True)
+            ndocs = len(results.docs())
 
-            print("results:", results)
-            print("nresults:", len(results.docs()))
-            print("scores:", results.top_n )
-            
-            for docnum in results.docs():
-                pass
-                #print(searcher.stored_fields(docnum)["title"])
+            if( ndocs <= 0 ):
+                print("no results found") 
+            else:
+                print("top results:", results)
+                print("number of total results:", ndocs)
+                #print("scores:", results.top_n )
+                
+                party_counts, word_per_party = result_statistics(results, searcher, qr)
+                print("number of manifestos from party: ",party_counts)
+                print("keyword per party: ",word_per_party)
+
         qr = input("\nquery: ")
 
 
