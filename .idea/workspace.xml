@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84176bd7-c313-475f-86a5-be4078c57a5f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ex2/Ex2.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseFalse0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseFalseTrue0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueFalse0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/FalseTrueTrue0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseFalse0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueFalseTrue0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueFalse0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.00010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0010.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.51BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.51GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.51MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.51SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.52BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.52GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.52MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.52SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.53BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.53GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.53MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.53SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.991BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.991GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.991MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.991SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.992BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.992GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.992MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.992SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.993BernoulliNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.993GaussianNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.993MultinomialNB.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex2/models/TrueTrueTrue0.0050.993SVC.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ex3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Gui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/en_docs.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model_0.66.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pt_docs_clean.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ex2/classificationTesting.py" afterPath="$PROJECT_DIR$/Ex2/classificationTesting.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ex2/Report.docx" afterPath="$PROJECT_DIR$/Report.docx" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Ex2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ex2/Ex2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#698#1621#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classificationTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ex2/classificationTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1879">
+              <caret line="100" column="62" lean-forward="false" selection-start-line="96" selection-start-column="32" selection-end-line="102" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="textRepresentation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ex2/textRepresentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-371">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultsAnalysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ex2/resultsAnalysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Ex2/classificationTesting.py" />
+        <option value="$PROJECT_DIR$/Ex2/printGood.py" />
+        <option value="$PROJECT_DIR$/Ex2/Ex2.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="977" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PRI_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRI_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRI_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRI_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Ex2" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IST\PRI\PRI_project" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Ex2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PRI_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ex2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ex2/Ex2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Ex2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84176bd7-c313-475f-86a5-be4078c57a5f" name="Default" comment="" />
+      <created>1543583617440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543583617440</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Ex2/printGood.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex2/resultsAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex2/textRepresentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex2/classificationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1879">
+          <caret line="100" column="62" lean-forward="false" selection-start-line="96" selection-start-column="32" selection-end-line="102" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex2/Ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#698#1621#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

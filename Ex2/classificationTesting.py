@@ -7,8 +7,9 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB, GaussianNB
 
-from textRepresentation import *
 import pandas as pd
+import numpy as np
+from Ex2.textRepresentation import retrieveProcessedData
 
 
 def classification_report_csv(report, name):
