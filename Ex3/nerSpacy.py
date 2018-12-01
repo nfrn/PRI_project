@@ -1,7 +1,7 @@
 import spacy
 import pandas as pd
 import pickle
-
+import en_core_web_sm
 class ListInfo:
     def __init__(self,info):
         self.occorrence = [info]
@@ -42,7 +42,10 @@ def load_obj(name ):
 
 
 if __name__ == '__main__':
-    nlp = spacy.load('pt')
+    nlp = spacy.load('en_core_web_lg')
+    #nlp = spacy.load('en_core_web_md')
+    #nlp = spacy.load('en_core_web_sm')
+
     data = pd.read_csv("en_docs.csv", encoding="utf8")
     data.dropna()
 
@@ -52,7 +55,7 @@ if __name__ == '__main__':
 
     for i in range(len(text)):
         manifest = str(data['text'][i])
-        manifest_id =  data['manifesto_id'][i]
+        manifest_id = data['manifesto_id'][i]
         party = data['party'][i]
         title = data['title'][i]
         print("ID:" + str(i) + " :" + str(title))
@@ -70,8 +73,8 @@ if __name__ == '__main__':
     for k, v in entitiesDict.items():
         print(k, v)
 
-    save_obj(entitiesDict,"DicionaryEntitiesSpacy")
+    save_obj(entitiesDict,"DicionaryEntitiesSpacyLg")
 
-    dicio = load_obj("DicionaryEntitiesSpacy")
+    dicio = load_obj("DicionaryEntitiesSpacyLg")
     for k, v in dicio.items():
         print(k, v)
