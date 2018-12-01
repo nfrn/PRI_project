@@ -55,6 +55,8 @@ if __name__ == '__main__':
         if currPrecision > bestPrecisionOverall:
             bestPrecisionOverall=currPrecision
             bestPrecisionOverallFile = file
+            print(file)
+            print(bestPrecisionOverall)
         if currRecall > bestRecallOverall:
             bestRecallOverall=currRecall
             bestRecallOverallFile = file

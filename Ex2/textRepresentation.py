@@ -67,14 +67,14 @@ def retrieveProcessedData(swFlag,stFlag, tf_idf, minf, maxf, ngram, max = ''):
     #Effect on corpus count values
     if tf_idf:
         if max != '':
-            vectorizer = TfidfVectorizer(strip_accents='ascii', lowercase=True, ngram_range=(1, ngram), min_df=minf, max_df=maxf, max_features=max)
+            vectorizer = TfidfVectorizer(sublinear_tf=True,norm='l2',strip_accents='ascii', lowercase=True, ngram_range=(1, ngram), min_df=minf, max_df=maxf, max_features=max)
             model = vectorizer.fit_transform(corpus)
         else:
-            vectorizer = TfidfVectorizer(strip_accents='ascii', lowercase=True, ngram_range=(1, ngram), min_df=minf, max_df=maxf)
+            vectorizer = TfidfVectorizer(sublinear_tf=True,norm='l2',strip_accents='ascii', lowercase=True, ngram_range=(1, ngram), min_df=minf, max_df=maxf)
             model = vectorizer.fit_transform(corpus)
     else:
         vectorizer = CountVectorizer(strip_accents='ascii', lowercase=True, ngram_range=(1, ngram), min_df=minf, max_df=maxf)
         model = vectorizer.fit_transform(corpus)
 
     print("Number of features: " + str(len(vectorizer.get_feature_names())))
-    return model, texts_labels
+    return model, texts_labels, vectorizer

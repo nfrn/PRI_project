@@ -43,10 +43,10 @@ def getModel(name):
 
 if __name__ == '__main__':
 
-    swFlagList = [False]
+    swFlagList = [True, False]
     stFlagList = [True, False]
     tf_idfList = [True, False]
-    minfList = [0.0001, 0.001, 0.005]
+    minfList = [0.0001, 5, 0.005]
     maxfList = [0.50,0.99]
     ngramList = [1,2,3]
     models = ["MultinomialNB", "BernoulliNB", "GaussianNB", "SVC"]
@@ -123,9 +123,9 @@ if __name__ == '__main__':
                                 report = classification_report(y_test, predicted)
                                 print(report)
 
-                                report_name = "results/" + str(swFlag) + str(stFlag) + str(tf_idf)+ str(minf)+ str(maxf)+ str(ngram)+ str(model) + ".csv"
+                                report_name = "results2/" + str(swFlag) + str(stFlag) + str(tf_idf)+ str(minf)+ str(maxf)+ str(ngram)+ str(model) + ".csv"
                                 classification_report_csv(report,report_name)
 
-                                filename = "models/" + str(swFlag) + str(stFlag) + str(tf_idf)+ str(minf)+ str(maxf)+ str(ngram)+ str(model) + ".sav"
-                                pickle.dump(model, open(filename, 'wb'))
+                                filename = "models2/" + str(swFlag) + str(stFlag) + str(tf_idf)+ str(minf)+ str(maxf)+ str(ngram)+ str(model) + ".sav"
+                                pickle.dump(clf, open(filename, 'wb'))
 
