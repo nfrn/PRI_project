@@ -68,12 +68,11 @@ def build_inverted_indexes(features, matrix, n_docs):
 
     return inv_index
 
-def read_documents(csv):
-    data = pd.read_csv(csv, encoding="utf8")
-
+def read_documents(data):
     for index, row in data.iterrows():
         documents.append(row['text'])
 
+    #print ("data", documents)
     count_vect = te.CountVectorizer()
     transformed = count_vect.fit_transform(documents)
 
@@ -103,8 +102,8 @@ def dot_product_similarity(inv_index, terms):
     #order by value
     return sorted(A.items(), key = itemgetter(1), reverse=True )
 
-def search(csv):
-    documents, i_index = read_documents(csv)
+def search(data):
+    documents, i_index = read_documents(data)
 
     doc_stats = Stats(documents, i_index)
     #stats.print_doc_index()

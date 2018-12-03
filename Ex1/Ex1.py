@@ -13,6 +13,7 @@ from lab import search, dot_product_similarity
 
 PATH="en_docs.csv"
 CLEANED_PATH = "en_docs_clean_test.csv"
+CLEAN_DATA = True
 QUERY_KW = "QUERY"
 FLAG_CREATE = False
 WHOOSH_SEARCH = False
@@ -25,11 +26,14 @@ print("--- %s seconds ---" % (time.time() - start_time))'''
 if not os.path.exists("indexdir"):
    os.mkdir("indexdir")
 
-def readData():
+def readData(path):
     print("Start reading data...")
-    data = pd.read_csv(PATH, encoding="utf8")
+    data = pd.read_csv(path, encoding="utf8")
     data.fillna("0", inplace=True)
     #data = data.groupby('id', as_index=False).agg(lambda x: x.tolist())
+    if not CLEAN_DATA:
+        return data
+
     print("making cleaning csv...")
     cleaned = data.groupby("md5sum_text", as_index=False).agg(lambda x: x.tolist())
 
@@ -59,11 +63,17 @@ def createSchema(data):
     ix = create_in("indexdir", schema)
     writer = ix.writer()
     print("Writing in schema", end='')
+    
+    if CLEAN_DATA:
+        num_column = 1
+    else:
+        num_column = 0
+
     for index, row in data.iterrows():
-        if(int(index)%5==0):
+        if(int(index)%(5 if CLEAN_DATA else 20)==0):
             print(".", end='', flush=True)
 
-        writer.add_document(number=row[1],
+        writer.add_document(number=row[num_column],
                     text=row["text"],
                     party=row["party"],
                     title=row["title"])
@@ -134,9 +144,9 @@ def searchManifest(ix):
 
         qr = input("\n" + "[METHOD_WHOOSH] " + QUERY_KW + ": ")
 
-def search_lab(CLEANED_PATH):
+def search_lab(path):
 
-    documents , i_index = search(CLEANED_PATH)
+    documents , i_index = search(path)
 
     while True:
         qr = input("[METHOD_LAB] " + QUERY_KW + ": ")
@@ -169,23 +179,31 @@ def search_lab(CLEANED_PATH):
         qr = input("\n" + QUERY_KW + ": ")
 
 if __name__ == '__main__':
-    data = readData()
 
-    if (len(sys.argv) > 1 and sys.argv[1]=="whoosh"):
-        WHOOSH_SEARCH = True
+    for arg in sys.argv[1:]:
+        if arg =="whoosh":
+            WHOOSH_SEARCH = True
+        elif arg=="generate":
+            FLAG_CREATE = True
+        elif arg=="raw_data":
+            CLEAN_DATA = False
+    
+    print("=============================================")
+    print("PARAMS:")
+    print("METHOD:", "whoosh" if WHOOSH_SEARCH  else "lab version")
+    print("CREATED WHOOSH INDEX:", "yes" if FLAG_CREATE else "no (previously created)")
+    print("DATA:", "cleaned data" if CLEAN_DATA else "raw data")
+    print("=============================================")
 
-    if WHOOSH_SEARCH and len(sys.argv) > 2 and sys.argv[2]=="generate":
-        FLAG_CREATE = True
-
-    if WHOOSH_SEARCH:
-        if FLAG_CREATE:
-            ix = createSchema(data)
-        else:
-            ix = index.open_dir("indexdir")
+    data = readData(PATH)
 
     if WHOOSH_SEARCH :
+        if FLAG_CREATE:
+            ix = createSchema(data)
+
+        ix = index.open_dir("indexdir")
         searchManifest(ix)
+
     else:#search using lab 2
-        search_lab(PATH)
-        pass
+        search_lab(data)
 
