@@ -103,14 +103,14 @@ def dot_product_similarity(inv_index, terms):
     return sorted(A.items(), key = itemgetter(1), reverse=True )
 
 def search(data):
-    documents, i_index = read_documents(data)
+    docs, i_index = read_documents(data)
 
-    doc_stats = Stats(documents, i_index)
+    #doc_stats = Stats(documents, i_index)
     #stats.print_doc_index()
     #print(idf_vals)
     #print(doc_stats)
 
-    return documents, i_index
+    return docs, i_index
 
     '''
     while(True):
