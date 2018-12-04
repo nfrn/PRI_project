@@ -6,39 +6,6 @@ import nltk
 import sklearn.feature_extraction.text as te
 import pandas as pd
 
-class Stats():
-
-    def __init__(self, documents, inv_index):
-        self.documents = documents
-        self.inv_index = inv_index
-
-        self.update()
-
-    def update(self):
-        self.n_docs = len(self.documents)
-        self.n_terms = self.calc_terms()
-        self.n_ind_terms = len(self.inv_index)
-
-    def calc_terms(self):
-        terms= 0
-        for doc in self.documents:
-            terms += len(nltk.word_tokenize(doc))
-
-        return terms
-
-    def print_doc_index(self):
-        print(self.documents)
-        print(self.inv_index)
-
-    def __str__(self):
-        string = ""
-
-        string += "num of docs > " + str(self.n_docs) + "\n"
-        string += "num of terms > "+ str(self.n_terms) + "\n"
-        string += "num of individual terms > "+ str(self.n_ind_terms) + "\n"
-
-        return string
-
 doc_stats = None
 documents = list()
 inv_index = dict()
@@ -104,45 +71,4 @@ def dot_product_similarity(inv_index, terms):
 
 def search(data):
     docs, i_index = read_documents(data)
-
-    #doc_stats = Stats(documents, i_index)
-    #stats.print_doc_index()
-    #print(idf_vals)
-    #print(doc_stats)
-
     return docs, i_index
-
-    '''
-    while(True):
-        query = input("search query: ")
-        if(query == "x"):
-            break
-
-        query = nltk.word_tokenize(query)
-        similar_docs = dot_product_similarity(query)
-        print(similar_docs)
-        print()
-
-    return
-    '''
-    '''
-    for term in sys.argv[1:]:
-        print("-term \'"+term+"\'")
-
-        df_val = 0
-        min_tf = 0
-        max_tf = 0
-        idf_val = 0
-        if (term in i_index):
-            df_val = df_vals[term]
-            min_tf = min_tfs[term]
-            max_tf = max_tfs[term]
-            idf_val = idf_vals[term]
-
-        print("df >", df_val)
-        print("min tf >", min_tf)
-        print("max tf >", max_tf)
-        print("idf >", idf_val)
-        print("")
-        '''
-    #print(documents)

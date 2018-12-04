@@ -7,6 +7,7 @@ import whoosh.query as query
 from whoosh.fields import Schema, TEXT, STORED, BOOLEAN, NUMERIC, DATETIME,ID
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import *
+#from whoosh.scoring.Weighting import BM25F, tf
 from collections import Counter
 import time
 from lab import search, dot_product_similarity
@@ -16,7 +17,7 @@ CLEANED_PATH = "en_docs_clean_test.csv"
 CLEAN_DATA = True
 QUERY_KW = "QUERY"
 FLAG_CREATE = False
-WHOOSH_SEARCH = False
+WHOOSH_SEARCH = True
 
 '''
 start_time = time.time()
@@ -29,7 +30,7 @@ if not os.path.exists("indexdir"):
 def readData(path):
     print("Start reading data...")
     data = pd.read_csv(path, encoding="utf8")
-    data.fillna("0", inplace=True)
+    data.fillna(" ", inplace=True)
     #data = data.groupby('id', as_index=False).agg(lambda x: x.tolist())
     if not CLEAN_DATA:
         return data
@@ -55,6 +56,7 @@ def readData(path):
 
 def createSchema(data):
     print("Create schema")
+    start_time = time.time()
     schema = Schema(number=NUMERIC,
                     text=TEXT(stored = True, vector=True),
                     party=NUMERIC(stored = True),
@@ -80,6 +82,7 @@ def createSchema(data):
     print("done")
     print("commiting schema...")
     writer.commit()
+    print("---schema indexing time: ", (time.time()-start_time), "s ---")
     return ix
 
 def keyword_party_counts(query_tokens, keyword_per_party_counts, total_term_freq, party):
@@ -93,6 +96,7 @@ def keyword_party_counts(query_tokens, keyword_per_party_counts, total_term_freq
             keyword_per_party_counts[party][ tok ] += total_term_freq[tok]
 
     return keyword_per_party_counts
+
 
 def result_statistics(results, searcher, qr):
     query_tokens = nltk.word_tokenize(qr)
@@ -111,13 +115,13 @@ def result_statistics(results, searcher, qr):
         total_term_freq = term_freq_text + term_freq_title
 
         keyword_per_party_counts = keyword_party_counts(query_tokens, keyword_per_party_counts, total_term_freq, party)
-        
+        #print("total_term_freq", total_term_freq)
     return party_counts, keyword_per_party_counts
             
 def whoosh_search(searcher, qr, ix):
     qp = MultifieldParser(["title", "text"], schema=ix.schema)
     #qp = QueryParser("title", schema=ix.schema)
-    
+
     q = qp.parse(qr)
     results = searcher.search(q, terms = True)
 
@@ -126,7 +130,7 @@ def whoosh_search(searcher, qr, ix):
 def searchManifest(ix):
     qr = input("[METHOD_WHOOSH] " + QUERY_KW + ": ")
     while(qr != '-exit'):
-        with ix.searcher() as searcher:
+        with ix.searcher() as searcher: #weighting=<class 'whoosh.scoring.BM25F'>
             start_time = time.time()
 
             results = whoosh_search(searcher, qr, ix)
@@ -145,18 +149,20 @@ def searchManifest(ix):
         qr = input("\n" + "[METHOD_WHOOSH] " + QUERY_KW + ": ")
 
 def search_lab(data):
-    party_counts = dict()
-    keyword_per_party_counts = dict()
+    start_time = time.time()
     documents , i_index = search(data)
-
+    print("---lab indexing time: %s seconds ---" % (time.time() - start_time))
     while True:
         qr = input("[METHOD_LAB] " + QUERY_KW + ": ")
+        party_counts = dict()
+        keyword_per_party_counts = dict()
 
         start_time = time.time()
         qr = nltk.word_tokenize(qr)
         results = dot_product_similarity(i_index, qr)
+        search_time = time.time() - start_time
+        
         ndocs = len(results)
-
         for doc in results:
             # party counts
             doc_row = doc[0]
@@ -169,34 +175,20 @@ def search_lab(data):
         
             #keyword_per_party_counts full_doc
             term_freq_text = dict()
-            for kw in qr:
-                term_freq_text[kw] = full_doc["text"].values[0].count(kw)
+            for kw in full_doc["text"].values[0].split():
+                if kw.lower() not in term_freq_text:
+                    term_freq_text[kw.lower()] = 0
+                term_freq_text[kw.lower()] += 1
             #term_freq_title = Counter(dict(searcher.vector_as("frequency", docnum, "title")))
-            total_term_freq = term_freq_text # + term_freq_title
+            total_term_freq = Counter(term_freq_text) # + term_freq_title
+
+            #print("total_term_freq", total_term_freq)
 
             keyword_per_party_counts = keyword_party_counts(qr, keyword_per_party_counts, total_term_freq, party )
 
         print_stats(ndocs, results, party_counts, keyword_per_party_counts)
-
-        print("---search time: %s seconds ---" % (time.time() - start_time))
-        #qp,q,results,ndocs = lab.search(lab_search(searcher, qr, ix)
-
-        continue
-        # print stats
-        '''
-        if( ndocs <= 0 ):
-            print("no results found") 
-        else:
-            print("top results:", results)
-            print("number of total results:", ndocs)
-            #print("scores:", results.top_n )
-            
-            party_counts, word_per_party = result_statistics(results, searcher, qr)
-            print("number of manifestos from party: ",party_counts)
-            print("keyword per party: ",word_per_party)
-        '''
-
-        qr = input("\n" + QUERY_KW + ": ")
+        print("---search time: %s seconds ---" % (search_time))
+        print()
 
 def print_stats(ndocs, results, party_counts, word_per_party):
     # print stats
@@ -211,8 +203,8 @@ def print_stats(ndocs, results, party_counts, word_per_party):
 
 if __name__ == '__main__':
     for arg in sys.argv[1:]:
-        if arg =="whoosh":
-            WHOOSH_SEARCH = True
+        if arg =="lab":
+            WHOOSH_SEARCH = False
         elif arg=="generate":
             FLAG_CREATE = True
         elif arg=="raw_data":
