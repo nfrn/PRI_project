@@ -13,7 +13,7 @@ import time
 from lab import search, dot_product_similarity
 
 PATH="en_docs.csv"
-CLEANED_PATH = "en_docs_clean_test.csv"
+CLEANED_PATH = "en_docs_clean.csv"
 CLEAN_DATA = True
 QUERY_KW = "QUERY"
 FLAG_CREATE = False
@@ -36,7 +36,7 @@ def readData(path):
         return data
 
     print("making cleaning csv...")
-    cleaned = data.groupby("md5sum_text", as_index=False).agg(lambda x: x.tolist())
+    cleaned = data.groupby("manifesto_id", as_index=False).agg(lambda x: x.tolist())
 
     for index, row in cleaned.iterrows():
         realtext = ' '.join(row['text'])
@@ -59,7 +59,7 @@ def createSchema(data):
     start_time = time.time()
     schema = Schema(number=NUMERIC,
                     text=TEXT(stored = True, vector=True),
-                    party=NUMERIC(stored = True),
+                    party=TEXT(stored = True),
                     title=TEXT(stored = True, vector=True))
 
     ix = create_in("indexdir", schema)
@@ -75,7 +75,7 @@ def createSchema(data):
         if(int(index)%(5 if CLEAN_DATA else 50)==0):
             print(".", end='', flush=True)
 
-        writer.add_document(number=row[num_column],
+        writer.add_document(
                     text=row["text"],
                     party=row["party"],
                     title=row["title"])
@@ -140,9 +140,9 @@ def searchManifest(ix):
             
             ndocs = len(results.docs())
             party_counts, word_per_party = result_statistics(results, searcher, qr)
-            print_stats(ndocs, results, party_counts, word_per_party)
-            
             stats_time = time.time() - stats_start_time
+
+            print_stats(ndocs, results, party_counts, word_per_party)
 
         print("---search time: %s seconds ---" % (search_time))
         print("---stats time: %s seconds ---" % (stats_time))
@@ -162,6 +162,7 @@ def search_lab(data):
         results = dot_product_similarity(i_index, qr)
         search_time = time.time() - start_time
         
+        start_search_time = time.time()
         ndocs = len(results)
         for doc in results:
             # party counts
@@ -185,9 +186,10 @@ def search_lab(data):
             #print("total_term_freq", total_term_freq)
 
             keyword_per_party_counts = keyword_party_counts(qr, keyword_per_party_counts, total_term_freq, party )
-
+        stats_time = time.time() - start_search_time
         print_stats(ndocs, results, party_counts, keyword_per_party_counts)
         print("---search time: %s seconds ---" % (search_time))
+        print("---stats time: %s seconds ---" % (stats_time))
         print()
 
 def print_stats(ndocs, results, party_counts, word_per_party):
