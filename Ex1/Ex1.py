@@ -16,7 +16,7 @@ PATH="en_docs.csv"
 CLEANED_PATH = "en_docs_clean.csv"
 CLEAN_DATA = True
 QUERY_KW = "QUERY"
-FLAG_CREATE = False
+FLAG_CREATE = True
 WHOOSH_SEARCH = True
 
 '''
@@ -57,22 +57,17 @@ def readData(path):
 def createSchema(data):
     print("Create schema")
     start_time = time.time()
-    schema = Schema(number=NUMERIC,
+    schema = Schema(
                     text=TEXT(stored = True, vector=True),
-                    party=TEXT(stored = True),
+                    party=TEXT(stored = True, vector=True),
                     title=TEXT(stored = True, vector=True))
 
     ix = create_in("indexdir", schema)
     writer = ix.writer()
     print("Writing in schema", end='')
-    
-    if CLEAN_DATA:
-        num_column = 1
-    else:
-        num_column = 0
 
     for index, row in data.iterrows():
-        if(int(index)%(5 if CLEAN_DATA else 50)==0):
+        if(int(index)%(5 if CLEAN_DATA else 100)==0):
             print(".", end='', flush=True)
 
         writer.add_document(
@@ -110,8 +105,18 @@ def result_statistics(results, searcher, qr):
         party_counts[party] += 1
 
         #keyword_per_party_counts
-        term_freq_text = Counter(dict(searcher.vector_as("frequency", docnum, "text")))
+        #getting frequencies might give exception
+        #on raw_dataset (en_docs.csc) because of cells that contain only discarderd 
+        #keyword/characters such as (a, the , '.' , )
+        #on en_docs_clean should never give exception.
+        try:
+            term_freq_text = Counter(dict(searcher.vector_as("frequency", docnum, "text")))
+        except:
+            term_freq_text = Counter(dict())
+
         term_freq_title = Counter(dict(searcher.vector_as("frequency", docnum, "title")))
+        term_freq_title = Counter(dict())
+
         total_term_freq = term_freq_text + term_freq_title
 
         keyword_per_party_counts = keyword_party_counts(query_tokens, keyword_per_party_counts, total_term_freq, party)
@@ -207,8 +212,8 @@ if __name__ == '__main__':
     for arg in sys.argv[1:]:
         if arg =="lab":
             WHOOSH_SEARCH = False
-        elif arg=="generate":
-            FLAG_CREATE = True
+        elif arg=="no_generate":
+            FLAG_CREATE = False
         elif arg=="raw_data":
             CLEAN_DATA = False
     
