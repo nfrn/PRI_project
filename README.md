@@ -20,9 +20,11 @@ Columns are separated by commas (,). Strings that contain commas are delimited
 by double quotes ("). Both files are encoded using UTF-8.
 
 #Ex 1 guide
+
 #running normally
-cd Ex1
-python3 Ex1.py
+
+- ```cd Ex1```
+- ```python3 Ex1.py```
 
 #libraries used
 - `pandas`
@@ -35,11 +37,14 @@ python3 Ex1.py
 - `no_generate`- use this if indexdir is already created from previous execution, and you did't change any flag. just for time saving on indexing the files.
 
 #examples
-```dart python3 Ex1.py ``` - runs normally on cleaned dataset (en_docs_clean.csv) and indexes the files
 
-```dart python3 Ex1.py lab ```- runs normally on cleaned dataset (en_docs_clean.csv) and indexes the files in memory using lab method
+```python3 Ex1.py ``` - runs normally on cleaned dataset (en_docs_clean.csv) and indexes the files
 
-```dart python3 Ex1.py raw_data ``` - runs on the uncleaned dataset (en_docs.csv) and indexes the files
+```python3 Ex1.py lab ```- runs normally on cleaned dataset (en_docs_clean.csv) and indexes the files in memory using lab method
 
-```dart python3 Ex1.py raw_data lab ```- runs on the uncleaned dataset (en_docs.csv) and indexes the files in memory using lab method
+```python3 Ex1.py raw_data ``` - runs on the uncleaned dataset (en_docs.csv) and indexes the files
+
+```python3 Ex1.py raw_data lab ```- runs on the uncleaned dataset (en_docs.csv) and indexes the files in memory using lab method
+
+```python3 Ex1.py no_generate``` - runs normally using previously indexed files
 
