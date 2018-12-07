@@ -44,3 +44,5 @@ python3 Ex1.py
 
 ```python3 Ex1.py raw_data lab ```- runs on the uncleaned dataset (en_docs.csv) and indexes the files in memory using lab method
 
+```python3 Ex1.py no_generate``` - runs normally using previously indexed files
+
