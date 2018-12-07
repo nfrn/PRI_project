@@ -20,9 +20,11 @@ Columns are separated by commas (,). Strings that contain commas are delimited
 by double quotes ("). Both files are encoded using UTF-8.
 
 #Ex 1 guide
+
 #running normally
-cd Ex1
-python3 Ex1.py
+
+- ```cd Ex1```
+- ```python3 Ex1.py```
 
 #libraries used
 - `pandas`
